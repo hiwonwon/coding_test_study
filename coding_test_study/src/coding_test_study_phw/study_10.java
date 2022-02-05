@@ -1,42 +1,38 @@
 package coding_test_study_phw;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+public class study_10 {	
+	public int[] solution(String s, char t){
+		int[] answer=new int[s.length()];
+		int p=1000;
+		for(int i=0; i<s.length(); i++){
+			if(s.charAt(i)==t){
+				p=0;
+				answer[i]=p;
+			}
+			else{
+				p++;
+				answer[i]=p;
+			}
+		}
+		p=1000;
+		for(int i=s.length()-1; i>=0; i--){
+			if(s.charAt(i)==t) p=0;
+			else{
+				p++;
+				answer[i]=Math.min(answer[i], p);
+			}
+		}
+		return answer;
+	}
 
-public class study_10 {
-	  public ArrayList<Integer> solution(String str,char t) {
-		  int len = str.length();
-	      ArrayList<Integer> answer = new ArrayList<>();
-	      int min = len;
-	      int a[]=new int[len];
-	      int cnt=0;
-	      char[]s=str.toCharArray();
-	      for(int i=0;i<str.length();i++) {
-	    	  if(s[i]==t) { 
-	    		  a[cnt]=i;
-	    		  cnt++;}
-	      }
-	      for(int i=0;i<str.length();i++) {
-	    	  for(int j=0;j<cnt;j++) {
-	    		  int dif=i-a[j];
-	    		  if(dif<0)dif=-dif;
-	    		  if(dif<min)min=dif;
-	    	  }
-	    	  answer.add(min);
-	    	  min=len;
-	      }
-	      
-	      return answer;
-	   }
-	   
-	   public static void main(String[] args) {
-	      study_10 T=new study_10();
-	      Scanner kb = new Scanner(System.in);
-	      String str=kb.next();
-	      char c=kb.next().charAt(0);
-	      for(int x:T.solution(str, c)) {
-		    	 System.out.printf("%d ",x);
-		     }
-	   }
-
+	public static void main(String[] args){
+		 study_10 T = new study_10();
+		Scanner kb = new Scanner(System.in);
+		String str=kb.next();
+		char c=kb.next().charAt(0);
+		for(int x : T.solution(str, c)){
+			System.out.print(x+" ");
+		}
+	}
 }
