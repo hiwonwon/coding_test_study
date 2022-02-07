@@ -1,7 +1,7 @@
 package coding_test_study_phw;
 
 import java.util.*;
-public class study_10 {	
+public class study_chapter1_10 {	
 	public int[] solution(String s, char t){
 		int[] answer=new int[s.length()];
 		int p=1000;
@@ -27,7 +27,7 @@ public class study_10 {
 	}
 
 	public static void main(String[] args){
-		 study_10 T = new study_10();
+		 study_chapter1_10 T = new study_chapter1_10();
 		Scanner kb = new Scanner(System.in);
 		String str=kb.next();
 		char c=kb.next().charAt(0);

@@ -2,7 +2,7 @@ package coding_test_study_phw;
 
 import java.util.Scanner;
 
-public class study_11 {
+public class study_chapter1_11 {
 	public String solution(String s){
 		String answer="";
 		s=s+" ";
@@ -19,7 +19,7 @@ public class study_11 {
 	}
 
 	public static void main(String[] args){
-		study_11 T = new study_11();
+		study_chapter1_11 T = new study_chapter1_11();
 		Scanner kb = new Scanner(System.in);
 		String str=kb.next();
 		System.out.println(T.solution(str));

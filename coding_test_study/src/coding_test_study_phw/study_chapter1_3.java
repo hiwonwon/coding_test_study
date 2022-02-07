@@ -2,7 +2,7 @@ package coding_test_study_phw;
 
 import java.util.Scanner;
 
-public class study_3 {
+public class study_chapter1_3 {
 	public String solution(String str) {
 	      String answer="";
 	      int m = Integer.MIN_VALUE;//미니멈 값을 초기값으로 대입
@@ -22,7 +22,7 @@ public class study_3 {
 	   }
 	   
 	   public static void main(String[] args) {
-	      study_3 T=new study_3();
+	      study_chapter1_3 T=new study_chapter1_3();
 	      Scanner kb = new Scanner(System.in);
 	      String str=kb.nextLine();
 	      System.out.print(T.solution(str));

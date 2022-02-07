@@ -3,7 +3,7 @@ package coding_test_study_phw;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class study_4 {
+public class study_chapter1_4 {
 	public ArrayList<String> solution(int n,String[] str) {
 		ArrayList<String> answer= new ArrayList<>();
 		for(String x:str) {
@@ -15,7 +15,7 @@ public class study_4 {
 	   }
 	   
 	   public static void main(String[] args) {
-	      study_4 T=new study_4();
+	      study_chapter1_4 T=new study_chapter1_4();
 	      Scanner kb = new Scanner(System.in);
 	      int n=kb.nextInt();
 	      String[] str=new String[n];

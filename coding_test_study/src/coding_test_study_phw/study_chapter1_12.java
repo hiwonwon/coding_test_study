@@ -2,7 +2,7 @@ package coding_test_study_phw;
 
 import java.util.Scanner;
 
-public class study_12 {
+public class study_chapter1_12 {
 	public String solution(int n, String s){
 		String answer="";
 		for(int i=0; i<n; i++){
@@ -15,7 +15,7 @@ public class study_12 {
 	}
 
 	public static void main(String[] args){
-		study_12 T = new study_12();
+		study_chapter1_12 T = new study_chapter1_12();
 		Scanner kb = new Scanner(System.in);
 		int n=kb.nextInt();
 		String str=kb.next();
