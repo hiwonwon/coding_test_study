@@ -1,5 +1,4 @@
 package coding_test_study_phw;
-
 import java.util.Scanner;
 
 public class study_chapter2_9 {
@@ -34,7 +33,7 @@ public class study_chapter2_9 {
 	}
 
 	public static void main(String[] args){
-		 study_chapter2_9 T = new study_chapter2_9();
+		 study_chapter2_9 T = new  study_chapter2_9();
 		Scanner kb = new Scanner(System.in);
 		int n=kb.nextInt();
 		int num[][]=new int[n][n];
