@@ -25,7 +25,7 @@ public class study_chapter2_11 {
 			tmp=0;
 		}
 	
-		System.out.print(max+" ");
+		//System.out.print(max+" ");
 		return answer;
 	}
 
@@ -33,6 +33,7 @@ public class study_chapter2_11 {
 		 study_chapter2_11 T = new study_chapter2_11();
 		Scanner kb = new Scanner(System.in);
 		int n=kb.nextInt();
+		int m=kb.nextInt();
 		int num[][]=new int[n][5];
 		for(int i=0;i<n;i++) {
 			for(int j=0;j<5;j++) {
