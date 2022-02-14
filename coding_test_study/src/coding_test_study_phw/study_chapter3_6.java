@@ -13,7 +13,7 @@ public class study_chapter3_6 {
 			x=k;
 			j=0;
 			cnt=0;
-			while(x>0&&i+j<n) {
+			while(x>=0&&i+j<n) {
 				if(arr[i+j]==0) {
 					x--;
 					cnt++;
@@ -31,7 +31,7 @@ public class study_chapter3_6 {
 				//System.out.printf("max=%d i=%d \n",max,i);
 			}
 		}
-		answer=max;
+		answer=max-1;
 		
 		return answer;
 	
