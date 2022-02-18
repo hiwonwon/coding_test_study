@@ -1,4 +1,5 @@
 package coding_test_study_phw;
+
 import java.util.Scanner;
 
 public class study_chapter6_3 {
